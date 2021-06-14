@@ -12,7 +12,7 @@ add_executable(farm-a1-temp-control
     main.cpp    
     )
 
-target_link_libraries(farm-a1-temp-control pico_stdlib)
+target_link_libraries(farm-a1-temp-control pico_stdlib hardware_adc)
 
 pico_enable_stdio_usb(farm-a1-temp-control 1)
 pico_enable_stdio_uart(farm-a1-temp-control 0)
